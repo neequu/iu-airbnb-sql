@@ -878,7 +878,7 @@ INSERT INTO Booking_Host_Payout (booking_id, host_id, payout_id) VALUES
 
 -- 1. User Table
 SELECT user_id, email, first_name, last_name, is_verified 
-FROM "User" 
+FROM Users
 WHERE registration_date > '2023-01-01'
 LIMIT 3;
 
@@ -1031,4 +1031,5 @@ LIMIT 3;
 SELECT booking_id, host_id, payout_id 
 FROM Booking_Host_Payout 
 WHERE booking_id = 1
+
 LIMIT 3;
