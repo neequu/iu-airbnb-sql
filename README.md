@@ -6,7 +6,9 @@ University database project implementing an Airbnb-like accommodation platform i
 
 ```
 ├── docker-compose.yml       # docker compose setup with postgresql 16
-└── airbnb_database.sql      # sql queries       
+├── create.yml     # sql create statements
+├── insert.yml     # sql insert statements
+└── select.sql     # sql test queries (20 base + 3 complex)       
 ```
 
 ## Database Schema
@@ -35,19 +37,11 @@ University database project implementing an Airbnb-like accommodation platform i
    docker-compose up -d
    ```
 
-2. **Access pgAdmin:**
-   - Add new server:
-     - Host: postgres
-     - Port: 5432
-     - Username: myuser
-     - Password: mysecretpassword
-     - Database: mydatabase
+2. **Look at the console output**
+   - Console will contain the result of all the executed queries
 
-3. **Run SQL scripts:**
-   - Execute `airbnb_database.sql` to create schema, populate and validate data
 
 ## Technologies Used
 
 - **Database:** PostgreSQL 16
 - **Containerization:** Docker + Docker Compose
-- **Management:** pgAdmin 4
