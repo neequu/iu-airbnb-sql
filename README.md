@@ -36,6 +36,7 @@ University database project implementing an Airbnb-like accommodation platform i
    ```bash
    docker-compose up -d
    ```
+   - You need to have docker installed on your system
 
 2. **Look at the console output**
    - Console will contain the result of all the executed queries
